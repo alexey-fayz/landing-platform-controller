@@ -79,8 +79,6 @@ The firmware is organized into logical layers:
 - **BSP/** – low-level hardware drivers (encoder, Hall sensors, DRV8353, INA219)
 - **Control/** – PID controllers, filters, estimators, trajectory generation
 - **Communication/** – CAN protocol, UART telemetry, command parser
-- **Utils/** – ring buffers, math utilities
-- **Tasks/** – FreeRTOS task implementations
 
 All hardware-specific code is isolated in BSP, ensuring that control logic remains portable and testable.
 
